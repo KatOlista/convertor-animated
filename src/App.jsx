@@ -14,7 +14,7 @@ import {
 import { getFilteredRates, getRates } from './utils';
 
 import './App.scss';
-import dollar from './assets/images/1.png';
+import dollar from './assets/images/1.webp';
 
 export const App = () => {
   gsap.registerPlugin(useGSAP);
