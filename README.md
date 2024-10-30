@@ -1,4 +1,4 @@
-## [Currency Converter](katolista.github.io/currency-exchange/)
+## [Currency Converter](https://katolista.github.io/convertor-animated/)
 
 Currency Converter is a simple web application that allows you to convert currency at the NBU rate.
 
@@ -10,6 +10,7 @@ Currency Converter is a simple web application that allows you to convert curren
 
 ## Technologies used:
 
+- ![GSAP](https://img.shields.io/badge/GSAP-93CF2B?style=for-the-badge&logo=greensock&logoColor=white)
 - ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
 - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 - ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
@@ -19,4 +20,4 @@ Currency Converter is a simple web application that allows you to convert curren
 - ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 - ![GithubPages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
 
-## [App demo](katolista.github.io/currency-exchange/)
+## [App demo](https://katolista.github.io/convertor-animated/)
