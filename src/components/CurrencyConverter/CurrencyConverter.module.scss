@@ -1,0 +1,26 @@
+.converter {
+  flex: auto;
+  z-index: 2;
+
+  &__header {
+    padding: 40px 40px 40px;
+    font-size: 35px;
+    line-height: 1;
+    text-shadow: 0 0 5px #010509;
+  }
+
+  &__loader {
+    max-width: 100px;
+    margin: 0 auto;
+  }
+
+  &__error {
+    text-shadow: 0 0 5px #010509;
+  }
+
+  @media (min-width: 768px) {
+    &__header {
+      font-size: 50px;
+    }
+  }
+}

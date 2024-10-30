@@ -1,0 +1,29 @@
+.select {
+  padding: 10px 20px;
+  max-width: 290px;
+  border-radius: 10px;
+  border: 1px solid #E8C6A0;
+  background-color: #010509;
+  font-size: 20px;
+  color: inherit;
+  outline: 2px solid transparent;
+  box-shadow: 2px 2px 5px #e8c6a0a9;
+
+  transition: outline 0.3s ease;
+
+  &:focus-visible,
+  &:active {
+    outline: 2px solid #E8C6A0;
+  }
+
+  &__option {
+    max-width: 100%;
+    background-color: #010509;
+    font-size: 15px;
+    color: inherit;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 450px;
+  }
+}

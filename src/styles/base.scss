@@ -1,0 +1,24 @@
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  line-height: 130%;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #010509;
+  color: #f5fffe;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

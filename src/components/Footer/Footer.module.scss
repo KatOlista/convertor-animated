@@ -1,0 +1,18 @@
+.footer {
+  padding-block: 25px;
+  color: #E8C6A0;
+  text-shadow: 0 0 5px #010509;
+  z-index: 2;
+
+  &__link {
+    transition: filter 300ms;
+  }
+
+  @media (min-width: 990px) {
+    &__link {
+      &:hover {
+        filter: drop-shadow(0 0 10px #4B8C86);
+      }
+    }
+  }
+}

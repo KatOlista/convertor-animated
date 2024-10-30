@@ -1,0 +1,54 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.select {
+  padding: 10px 20px;
+  max-width: 290px;
+  border-radius: 10px;
+  border: 1px solid #81ffa7;
+  background-color: #010509;
+  font-size: 20px;
+  color: inherit;
+  outline: 2px solid transparent;
+
+  transition: outline 0.3s ease;
+
+  &:focus-visible,
+  &:active {
+    outline: 2px solid #81ffa7;
+  }
+
+  &__option {
+    max-width: 100%;
+    background-color: #010509;
+    font-size: 15px;
+    color: inherit;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 450px;
+  }
+}
+
+.input {
+  padding: 10px 20px;
+  max-width: 250px;
+  text-align: right;
+  border: 1px solid #81ffa7;
+  border-radius: 10px;
+  background-color: #010509;
+  font-size: 20px;
+  color: inherit;
+  outline: 2px solid transparent;
+
+  transition: outline 0.3s ease;
+
+  &:focus-visible,
+  &:active {
+    outline: 2px solid #81ffa7;
+  }
+}

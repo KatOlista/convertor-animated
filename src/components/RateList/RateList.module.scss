@@ -1,0 +1,14 @@
+.rates {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  @media (min-width: 990px) {
+    gap: 100px;
+  }
+}

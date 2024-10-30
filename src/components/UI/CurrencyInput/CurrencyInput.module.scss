@@ -1,0 +1,23 @@
+.input {
+  padding: 10px 20px;
+  max-width: 290px;
+  text-align: right;
+  border: 1px solid #E8C6A0;
+  border-radius: 10px;
+  background-color: #010509;
+  font-size: 20px;
+  color: inherit;
+  box-shadow: 2px 2px 5px #e8c6a0a9;
+  outline: 2px solid transparent;
+
+  transition: outline 0.3s ease;
+
+  &:focus-visible,
+  &:active {
+    outline: 2px solid #E8C6A0;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 450px;
+  }
+}

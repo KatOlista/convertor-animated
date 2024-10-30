@@ -1,0 +1,39 @@
+.header {
+  padding: 25px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #01050937;
+
+  &__logo {
+    will-change: filter;
+    transition: filter 300ms;
+  }
+
+  &__loader {
+    width: 60px;
+  }
+
+  @media (min-width: 768px) {
+    padding-inline: 50px;
+
+    &__loader {
+      width: 40px;
+    }
+  }
+
+  @media (min-width: 990px) {
+    &__link {
+      height: 48px;
+    }
+
+    &__logo {
+      width: auto;
+      height: 100%;
+
+      &:hover {
+        filter: drop-shadow(0 0 10px #4B8C86);
+      }
+    }
+  }
+}

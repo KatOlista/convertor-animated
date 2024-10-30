@@ -1,0 +1,14 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__title {
+    color: #E8C6A0;
+    text-shadow: 0 0 5px #010509;
+  }
+
+  &__amount {
+    text-shadow: 0 0 5px #010509;
+  }
+}

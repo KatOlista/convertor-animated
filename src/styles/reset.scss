@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+p {
+  margin: 0;
+}
+
+ul,
+p,
+button {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: default;
+
+  @media (min-width: 990px) {
+    cursor: pointer;
+  }
+}
+
+a:focus,
+a:focus-visible,
+input[type='submit']:focus,
+button:focus-visible {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-family: inherit;
+  color: inherit;
+
+  @media (min-width: 990px) {
+    cursor: pointer;
+  }
+}
+
+image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
