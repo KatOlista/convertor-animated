@@ -9,7 +9,7 @@ import { setUpperInput } from '../../redux/features/upperInputSlice';
 import { setLowerInput } from '../../redux/features/lowerInputSlice';
 
 import styles from './CurrencyConverter.module.scss';
-import bg from '../../assets/images/bg1.jpg'
+import bg from '../../assets/images/bg1.jpg';
 
 export const CurrencyConverter = () => {
   gsap.registerPlugin(useGSAP);
@@ -17,12 +17,10 @@ export const CurrencyConverter = () => {
   const converterRef = useRef(null);
 
   useGSAP(() => {
-    gsap
-      .timeline()
-      .from(converterRef.current, {
-        y: '-200%',
-        duration: 1,
-      });
+    gsap.timeline().from(converterRef.current, {
+      y: '-200%',
+      duration: 1,
+    });
   });
 
   const dispatch = useDispatch();

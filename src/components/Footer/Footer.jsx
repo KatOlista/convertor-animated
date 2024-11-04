@@ -10,12 +10,10 @@ export const Footer = () => {
   const footerRef = useRef(null);
 
   useGSAP(() => {
-    gsap
-      .timeline()
-      .from(footerRef.current, {
-        opacity: 0,
-        duration: 1,
-      });
+    gsap.timeline().from(footerRef.current, {
+      opacity: 0,
+      duration: 1,
+    });
   });
 
   return (
@@ -23,10 +21,11 @@ export const Footer = () => {
       <a
         href="https://katolista.github.io/KatOlista-portfolio/"
         className={styles.footer__link}
-        target='_blank'
+        target="_blank"
       >
         @KatOlista&nbsp;
       </a>
       2024
-    </footer>);
+    </footer>
+  );
 };

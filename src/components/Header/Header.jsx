@@ -16,10 +16,11 @@ export const Header = () => {
 
   useGSAP(() => {
     gsap.from(headerRef.current, {
-        y: '-100%',
-        opacity: 0,
-        duration: 1,
-      });
+      y: '-100%',
+      opacity: 0,
+      delay: 2,
+      duration: 1,
+    });
   });
 
   const { isLoading, hasError, rates } = useSelector(
@@ -30,10 +31,7 @@ export const Header = () => {
   const showContent = !isLoading && !hasError && !!rates.length;
 
   return (
-    <header
-      ref={headerRef}
-      className={styles.header}
-    >
+    <header ref={headerRef} className={styles.header}>
       <a href="./" className={styles.header__link}>
         <Logo className={styles.header__logo} />
       </a>

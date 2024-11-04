@@ -1,4 +1,3 @@
-
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { useEffect, useRef } from 'react';
@@ -21,35 +20,24 @@ export const App = () => {
 
   const imgRef = useRef(null);
 
-  useGSAP(() => {
-    gsap
-      .timeline()
-      .from('.app__dollar0', {
-        y: '-600%',
-        rotate: '-=360',
-        duration: 5,
-      })
-      .from('.app__dollar1', {
-        y: '-600%',
-        rotate: '-=360',
-        duration: 5,
-      })
-      .from('.app__dollar2', {
-        y: '-600%',
-        rotate: '-=360',
-        duration: 5,
-      })
-      .from('.app__dollar3', {
-        y: '-600%',
-        rotate: '-=360',
-        duration: 5,
-      })
-      .from('.app__dollar4', {
-        y: '-600%',
-        rotate: '-=360',
-        duration: 5,
-      });
-  }, {scope: imgRef});
+  useGSAP(
+    () => {
+      gsap
+        .timeline()
+        .fromTo('.app', {
+          transform: 'scale(9) translateY(15%)',
+          // transform: 'scale(5) rotate(-60deg) translate(-25%, -10%)',
+        }, {
+          // transform: 'scale(1) rotate(0deg) translate(0)',
+          transform: 'scale(1) translateY(0)',
+          duration: 2,
+        })
+        .from('.app__dollar0', {
+          y: '-600%',
+          rotate: '-=360',
+          duration: 5,
+        })
+    });
 
   const dispatch = useDispatch();
 
@@ -70,12 +58,13 @@ export const App = () => {
   }, []);
 
   return (
-    <div ref={imgRef} className='app'>
-      <img ref={imgRef} src={dollar} alt="dollar" className='app__dollar app__dollar0'/>
-      <img ref={imgRef} src={dollar} alt="dollar" className='app__dollar app__dollar1'/>
-      <img ref={imgRef} src={dollar} alt="dollar" className='app__dollar app__dollar2'/>
-      <img ref={imgRef} src={dollar} alt="dollar" className='app__dollar app__dollar3'/>
-      <img ref={imgRef} src={dollar} alt="dollar" className='app__dollar app__dollar4'/>
+    <div className="app">
+      <img
+        ref={imgRef}
+        src={dollar}
+        alt="dollar"
+        className="app__dollar app__dollar0"
+      />
 
       <Header />
 

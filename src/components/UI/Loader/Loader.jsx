@@ -13,10 +13,11 @@ export const Loader = () => {
 
   useGSAP(() => {
     gsap.from(loaderRef.current, {
-        y: '-40%',
-        opacity: 0,
-        duration: 1,
-      });
+      y: '-40%',
+      opacity: 0,
+      delay: 2,
+      duration: 1,
+    });
   });
 
   return (

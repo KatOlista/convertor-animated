@@ -19,13 +19,15 @@ export const CurrencyConverter = () => {
       .from(`.${styles.converter__header}`, {
         x: '20%',
         opacity: 0,
+        delay: 2,
         duration: 1,
       })
       .from(`.${styles.converter__error}`, {
         x: '20%',
         opacity: 0,
+        delay: 2,
         duration: 1,
-      })
+      });
   });
 
   const dispatch = useDispatch();
@@ -115,20 +117,26 @@ export const CurrencyConverter = () => {
           </div>
         )}
 
-        {showError && <p className={styles.converter__error}>Something went wrong</p>}
+        {showError && (
+          <p className={styles.converter__error}>Something went wrong</p>
+        )}
 
-          {showContent && (
-            <ConverterForm
-              upperInputValue={upperInputValue}
-              lowerInputValue={lowerInputValue}
-              selectedCurrency1={selectedCurrency1}
-              selectedCurrency2={selectedCurrency2}
-              setInputValueOnUpperInputChange={setInputValueOnUpperInputChange}
-              setInputValueOnLowerInputChange={setInputValueOnLowerInputChange}
-              calculateInputOnUpperCurrencyChange={calculateInputOnUpperCurrencyChange}
-              calculateInputOnLowerCurrencyChange={calculateInputOnLowerCurrencyChange}
-            />
-          )}
+        {showContent && (
+          <ConverterForm
+            upperInputValue={upperInputValue}
+            lowerInputValue={lowerInputValue}
+            selectedCurrency1={selectedCurrency1}
+            selectedCurrency2={selectedCurrency2}
+            setInputValueOnUpperInputChange={setInputValueOnUpperInputChange}
+            setInputValueOnLowerInputChange={setInputValueOnLowerInputChange}
+            calculateInputOnUpperCurrencyChange={
+              calculateInputOnUpperCurrencyChange
+            }
+            calculateInputOnLowerCurrencyChange={
+              calculateInputOnLowerCurrencyChange
+            }
+          />
+        )}
       </div>
     </main>
   );

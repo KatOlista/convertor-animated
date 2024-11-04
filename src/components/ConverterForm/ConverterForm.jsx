@@ -14,7 +14,7 @@ export const ConverterForm = ({
   setInputValueOnUpperInputChange,
   setInputValueOnLowerInputChange,
   calculateInputOnUpperCurrencyChange,
-  calculateInputOnLowerCurrencyChange
+  calculateInputOnLowerCurrencyChange,
 }) => {
   gsap.registerPlugin(useGSAP);
 
@@ -22,10 +22,11 @@ export const ConverterForm = ({
 
   useGSAP(() => {
     gsap.from(formRef.current, {
-        y: '-20%',
-        opacity: 0,
-        duration: 1,
-      })
+      y: '-20%',
+      opacity: 0,
+      delay: 2,
+      duration: 1,
+    });
   });
 
   return (
@@ -44,5 +45,5 @@ export const ConverterForm = ({
         selectedCc={selectedCurrency2}
       />
     </form>
-  )
-}
+  );
+};

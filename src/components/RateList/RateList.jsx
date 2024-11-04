@@ -13,12 +13,10 @@ export const RateList = ({ rates }) => {
   const listRef = useRef(null);
 
   useGSAP(() => {
-    gsap
-      .timeline()
-      .from(listRef.current, {
-        x: '100%',
-        duration: 1,
-      });
+    gsap.timeline().from(listRef.current, {
+      x: '100%',
+      duration: 1,
+    });
   });
 
   const filteredRates = rates.filter(
