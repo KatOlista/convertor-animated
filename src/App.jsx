@@ -26,9 +26,7 @@ export const App = () => {
         .timeline()
         .fromTo('.app', {
           transform: 'scale(9) translateY(15%)',
-          // transform: 'scale(5) rotate(-60deg) translate(-25%, -10%)',
         }, {
-          // transform: 'scale(1) rotate(0deg) translate(0)',
           transform: 'scale(1) translateY(0)',
           duration: 2,
         })
