@@ -19,14 +19,12 @@ export const CurrencyConverter = () => {
       .from(`.${styles.converter__header}`, {
         x: '20%',
         opacity: 0,
-        delay: 2,
-        duration: 1,
+        duration: 0.5,
       })
       .from(`.${styles.converter__error}`, {
         x: '20%',
         opacity: 0,
-        delay: 2,
-        duration: 1,
+        duration: 0.3,
       });
   });
 

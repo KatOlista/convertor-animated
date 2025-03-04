@@ -18,7 +18,6 @@ export const Header = () => {
     gsap.from(headerRef.current, {
       y: '-100%',
       opacity: 0,
-      delay: 2,
       duration: 1,
     });
   });

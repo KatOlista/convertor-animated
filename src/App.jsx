@@ -22,17 +22,6 @@ export const App = () => {
 
   useGSAP(() => {
     gsap
-      .timeline()
-      .fromTo(
-        '.app',
-        {
-          transform: 'scale(2) translateY(15%)',
-        },
-        {
-          transform: 'scale(1) translateY(0)',
-          duration: 2,
-        },
-      )
       .from('.app__dollar0', {
         y: '-600%',
         rotate: '-=360',
