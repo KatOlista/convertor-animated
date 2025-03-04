@@ -20,22 +20,26 @@ export const App = () => {
 
   const imgRef = useRef(null);
 
-  useGSAP(
-    () => {
-      gsap
-        .timeline()
-        .fromTo('.app', {
-          transform: 'scale(9) translateY(15%)',
-        }, {
+  useGSAP(() => {
+    gsap
+      .timeline()
+      .fromTo(
+        '.app',
+        {
+          transform: 'scale(2) translateY(15%)',
+        },
+        {
           transform: 'scale(1) translateY(0)',
           duration: 2,
-        })
-        .from('.app__dollar0', {
-          y: '-600%',
-          rotate: '-=360',
-          duration: 5,
-        })
-    });
+        },
+      )
+      .from('.app__dollar0', {
+        y: '-600%',
+        rotate: '-=360',
+        delay: 2,
+        duration: 5,
+      });
+  });
 
   const dispatch = useDispatch();
 
