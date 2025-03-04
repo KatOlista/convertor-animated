@@ -11,6 +11,7 @@
     "dev": "npm run fix-style & vite",
     "fix-style": "npm run format & npm run lint",
     "format": "prettier . --ignore-path .gitignore --write",
+    "test": "",
     "lint": "eslint .",
     "predeploy": "npm run build",
     "prepare": "husky",
