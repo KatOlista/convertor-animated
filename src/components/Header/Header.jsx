@@ -32,7 +32,7 @@ export const Header = () => {
 
   return (
     <header ref={headerRef} className={styles.header}>
-      <a href="./" className={styles.header__link}>
+      <a aria-label="logo" href="./" className={styles.header__link}>
         <Logo className={styles.header__logo} />
       </a>
 
